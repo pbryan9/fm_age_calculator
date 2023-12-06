@@ -16,7 +16,7 @@ export default function Attribution() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   position: fixed;
   bottom: 0;
   left: 50%;

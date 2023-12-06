@@ -106,6 +106,9 @@ export default function App() {
 
   return (
     <Wrapper>
+      <VisuallyHidden>
+        <h1>Age Calculator</h1>
+      </VisuallyHidden>
       <section>
         <FormWrapper onSubmit={submitForm} id='age-calculator-form'>
           <InputContainer>
@@ -187,7 +190,7 @@ export default function App() {
           title='Calculate age'
           form='age-calculator-form'
         >
-          <img src={arrowImage} />
+          <img src={arrowImage} alt='calculate age' />
         </SubmitButton>
         {/* divider */}
       </MiddleSection>
@@ -207,6 +210,18 @@ export default function App() {
 }
 
 const BREAKPOINT = '900px';
+
+const VisuallyHidden = styled.div`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+`;
 
 const Wrapper = styled.main`
   background-color: hsl(${COLORS.white});
