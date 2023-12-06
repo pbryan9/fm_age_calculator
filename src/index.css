@@ -82,3 +82,21 @@ h6 {
 :root {
   --fs-normal: 2rem;
 }
+
+body {
+  background-color: hsl(0deg 0% 94%);
+  color: hsl(0deg 0% 8%);
+  font-size: var(--fs-normal);
+  font-family: 'Poppins', sans-serif;
+
+  padding-top: 5.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    padding-top: revert;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
