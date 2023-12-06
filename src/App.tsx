@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { COLORS } from './lib/colors';
 import { useState } from 'react';
 
-import arrowImage from '../public/assets/images/icon-arrow.svg';
+import arrowImage from './assets/images/icon-arrow.svg';
 import calculateAge, { Age } from './lib/calculator';
 import { dayIsValid, monthIsValid, yearIsValid } from './lib/validators';
 
